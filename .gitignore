@@ -5,7 +5,6 @@
 /android/
 
 # Local builds and generated review artifacts
-/build/
 /docx_review_render/
 /*.docx
 /~$*.docx
