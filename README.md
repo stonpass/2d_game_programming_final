@@ -1,4 +1,4 @@
-# 계명크래프트
+# 2d_game_programming_final
 
 2D게임프로그래밍 기말 프로젝트로 제작한 Godot 기반 2D RTS 게임입니다.
 
