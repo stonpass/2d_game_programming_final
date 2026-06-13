@@ -24,7 +24,7 @@ const HALF_HP_COUNTER_SPAWN_COUNT := 50
 const POST_HALF_HP_WAVE_STEP := 10
 const POST_HALF_HP_MAX_WAVE_COUNT := 50
 const LOW_HP_BATCH_SPAWN_COUNT := 10
-const LOW_HP_BATCH_INTERVAL := 1.5
+const LOW_HP_BATCH_INTERVAL := 0.5
 const LOW_HP_BATCHES_PER_SEQUENCE := 10
 
 @export var victory_target_path: NodePath

@@ -6,6 +6,11 @@
 
 # Local builds and generated review artifacts
 /docx_review_render/
+/outputs/
+/.godot_appdata/
+/build/*test_export*
 /*.docx
+/*.pdf
+/*.pptx
 /~$*.docx
 *.tmp
