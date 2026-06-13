@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ruins_site.gd" id="1_ruins"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruins"]
+size = Vector2(112, 80)
+
+[node name="RuinsSite" type="Area2D" groups=["Ruins"]]
+z_as_relative = false
+script = ExtResource("1_ruins")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ruins")

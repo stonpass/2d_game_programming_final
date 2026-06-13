@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/resource_deposit.gd" id="1_resource"]
+[ext_resource type="Texture2D" path="res://캐릭터 폴더/map/blue.png" id="2_ifmq7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pfuy"]
+size = Vector2(109, 61)
+
+[node name="ResourceDeposit" type="Area2D" unique_id=3132909 groups=["ResourceDeposit"]]
+z_as_relative = false
+script = ExtResource("1_resource")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=806737318]
+position = Vector2(-0.5, -8.5)
+shape = SubResource("RectangleShape2D_5pfuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1137826875]
+position = Vector2(1, -27)
+scale = Vector2(0.265, 0.2)
+texture = ExtResource("2_ifmq7")

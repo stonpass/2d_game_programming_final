@@ -1,0 +1,33 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/canvas_layer.gd" id="1_v2lfg"]
+
+[node name="CanvasLayer" type="Node2D" unique_id=311316891]
+process_mode = 3
+script = ExtResource("1_v2lfg")
+
+[node name="Background" type="ColorRect" parent="." unique_id=246717337]
+offset_right = 1261.0
+offset_bottom = 739.0
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1662944578]
+offset_left = 500.0
+offset_top = 300.0
+offset_right = 572.0
+offset_bottom = 393.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=338597762]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1627814807]
+layout_mode = 2
+text = "일시정지"
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1825895580]
+layout_mode = 2
+text = "계속하기"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1394164014]
+layout_mode = 2
+text = "종료하기"

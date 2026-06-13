@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/pointer.gd" id="1_lu6pp"]
+[ext_resource type="Texture2D" path="res://캐릭터 폴더/mouse/mouse.png" id="2_p82c6"]
+[ext_resource type="Texture2D" path="res://캐릭터 폴더/mouse/mouse_on.png" id="3_n7kb2"]
+[ext_resource type="Texture2D" path="res://캐릭터 폴더/mouse/mouse_attak.png" id="4_ieooq"]
+[ext_resource type="Texture2D" path="res://캐릭터 폴더/mouse/mouse_attak_on.png" id="5_3g61m"]
+
+[node name="Pointer" type="Node2D" unique_id=1134970084]
+z_index = 4094
+z_as_relative = false
+script = ExtResource("1_lu6pp")
+mouse_cursor = ExtResource("2_p82c6")
+mouse_on_cursor = ExtResource("3_n7kb2")
+mouse_attack_cursor = ExtResource("4_ieooq")
+mouse_attack_on_cursor = ExtResource("5_3g61m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=974240545]
+z_index = 4095
+z_as_relative = false

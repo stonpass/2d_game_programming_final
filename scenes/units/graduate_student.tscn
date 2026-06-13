@@ -1,0 +1,41 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/unit.gd" id="1_7j82s"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/GraduateStudent.tres" id="2_hatr0"]
+[ext_resource type="Texture2D" path="res://icon/M_stduent_icon.png" id="3_qegxa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7xl5b"]
+radius = 5.0
+
+[node name="GraduateStudent" type="CharacterBody2D" unique_id=1958236224 groups=["Ally", "unit"]]
+z_index = 1
+y_sort_enabled = true
+input_pickable = true
+motion_mode = 1
+script = ExtResource("1_7j82s")
+collision_layer = 2
+collision_mask = 1
+speed = 200.0
+max_hp = 100
+hp = 100
+attack_damage = 26
+attack_cooldown = 0.7
+attack_range = 50.0
+unit_name = "대학원생"
+population_cost = 2
+icon_texture = ExtResource("3_qegxa")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=10321976]
+position = Vector2(0, -18)
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("2_hatr0")
+animation = &"stand_sidefront"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=264697389]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_7xl5b")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=478606577]
+path_desired_distance = 10.0
+path_max_distance = 50.0

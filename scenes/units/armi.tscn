@@ -1,0 +1,41 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/unit.gd" id="1_armi"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/armi.tres" id="2_armi"]
+[ext_resource type="Texture2D" path="res://icon/armi_icon.png" id="3_armi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_armi"]
+radius = 5.0
+
+[node name="Armi" type="CharacterBody2D" groups=["Ally", "unit"]]
+z_index = 1
+y_sort_enabled = true
+input_pickable = true
+motion_mode = 1
+script = ExtResource("1_armi")
+collision_layer = 2
+collision_mask = 1
+speed = 180.0
+max_hp = 50
+hp = 50
+attack_damage = 20
+attack_cooldown = 0.3
+attack_range = 350.0
+detection_range = 400.0
+unit_name = "예비군"
+population_cost = 3
+icon_texture = ExtResource("3_armi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -18)
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("2_armi")
+animation = &"stand_sidefront"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_armi")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 10.0
+path_max_distance = 50.0

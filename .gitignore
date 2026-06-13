@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.git/
+.repo_git/
+.godot/
+/android/
+
+# Local builds and generated review artifacts
+/build/
+/docx_review_render/
+/*.docx
+/~$*.docx
+*.tmp

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bhhc2bt58jjhd"]
+
+[ext_resource type="Script" uid="uid://dpgeyvtj0kul8" path="res://scripts/unit.gd" id="1_5gr0f"]
+[ext_resource type="SpriteFrames" uid="uid://fmcejxq27ywp" path="res://resources/sprite_frames/student_sprite_frames.tres" id="2_5twd6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7xl5b"]
+radius = 5.0
+
+[node name="Student" type="CharacterBody2D" unique_id=1958236224 groups=["Ally", "unit"]]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 2
+input_pickable = true
+motion_mode = 1
+script = ExtResource("1_5gr0f")
+attack_range = 50.0
+can_gather = true
+can_build = true
+unit_name = "학생"
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=10321976]
+position = Vector2(0, -18)
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("2_5twd6")
+animation = &"stand_sidefront"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=264697389]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_7xl5b")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=478606577]
+path_desired_distance = 50.0
+target_desired_distance = 15.0
+path_max_distance = 50.0

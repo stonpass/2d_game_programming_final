@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://carfaj80l1hih"
+path="res://.godot/imported/StarCraft - Terran Theme 1 - Katrulzin.mp3-4bd9fc477999f60e312c9399a2c0d886.mp3str"
+
+[deps]
+
+source_file="res://assets/muic/StarCraft - Terran Theme 1 - Katrulzin.mp3"
+dest_files=["res://.godot/imported/StarCraft - Terran Theme 1 - Katrulzin.mp3-4bd9fc477999f60e312c9399a2c0d886.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[node name="TopBar" type="HBoxContainer" unique_id=682496033]
+offset_left = 780.0
+offset_top = 8.0
+offset_right = 1140.0
+offset_bottom = 36.0
+mouse_filter = 2
+alignment = 2
+
+[node name="Minerals" type="Label" parent="." unique_id=1626431011]
+layout_mode = 2
+mouse_filter = 2
+text = "청금석: 0"
+
+[node name="Gas" type="Label" parent="." unique_id=248965347]
+layout_mode = 2
+mouse_filter = 2
+text = "유물: 0"
+
+[node name="Population" type="Label" parent="." unique_id=1529731428]
+layout_mode = 2
+mouse_filter = 2
+text = "인구수: 0 / 0"
